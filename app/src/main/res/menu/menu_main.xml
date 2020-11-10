@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kr.hs.emirim.s2019s05.myapplication.MainActivity">
+    <item
+        android:title="그림회전"
+        android:id="@+id/item"/>
+   <group
+       android:checkableBehavior="single">
+       <item
+           android:title="아이템1"
+           android:id="@+id/item1"/>
+       <item
+           android:title="아이템2"
+           android:id="@+id/item2"/>
+       <item
+           android:title="아이템3"
+           android:id="@+id/itme3"/>
+
+   </group>
+</menu>
