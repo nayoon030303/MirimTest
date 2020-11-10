@@ -14,10 +14,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     EditText editDegree;
-    item1;
+    ImageView img1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         editDegree = findViewById(R.id.edit);
+        img1 = findViewById(R.id.img);
+
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -51,15 +54,18 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()){
-            case R.id.item:
-                img1.setRotation(Float.parseFloat(editDegree.getText()).toString());
-                break;
+            case R.id.img:
+                img1.setRotation(Float.parseFloat(editDegree.getText().toString()));
+                return true;
             case R.id.item1:
-                break;
+                img1.setImageResource(R.drawable.icon1);
+                return true;
             case R.id.item2:
-                break;
+                img1.setImageResource(R.drawable.icon2);
+                return true;
             case R.id.itme3:
-                break;
+                img1.setImageResource(R.drawable.icon3);
+                return true;
         }
 
 

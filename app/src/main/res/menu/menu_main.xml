@@ -4,7 +4,7 @@
     tools:context="kr.hs.emirim.s2019s05.myapplication.MainActivity">
     <item
         android:title="그림회전"
-        android:id="@+id/item"/>
+        android:id="@+id/img"/>
    <group
        android:checkableBehavior="single">
        <item
